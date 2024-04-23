@@ -7,7 +7,50 @@
     <title>Index</title>
     <link href="css/estilos.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-</head>
+    <style>
+      .carousel-space {
+          margin-bottom: 200px; 
+      }
+      .footer-space {
+          margin-top: 200px; 
+      }
+      body {
+            background-color: #141414; 
+        }
+        .form-container {
+            background-color: #4c0000;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            color: #ffffff;
+        }
+        .form-control {
+            border-color: #ccc;
+        }
+        .form-control:focus {
+            border-color: #6c757d;
+            box-shadow: none;
+        }
+        .btn-primary {
+            background-color: #ffff00; /* Amarillo */
+            border-color: #ffff00; /* Amarillo */
+            color: #000000; /* Texto negro */
+        }
+        .btn-primary:hover {
+            background-color: #cccc00; /* Amarillo oscuro al pasar el mouse */
+            border-color: #cccc00; /* Amarillo oscuro al pasar el mouse */
+        }  
+        .custom-label {
+            color: #ffffff;
+        }
+
+        
+      
+  </style>
+  </head>
 <body>
 
 
@@ -31,7 +74,7 @@
   </nav>
   
   
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide carousel-space" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="imagenes/PROMO1.png" class="d-block w-100" alt="NO ENCONTRADO">
@@ -52,6 +95,35 @@
     <span class="visually-hidden">Siguiente</span>
   </button>
 </div>
+
+ <!-- Formulario pa iniciar sesion -->
+ <div class="container form-container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center">INICIAR SESIÓN</h2>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label custom-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label custom-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">LOGIN</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-dark bg-black text-white py-4 footer-space">
+  <div class="container text-center">
+      <p class="navbar-text mx-auto">Asignatura: Programación Front-End</p>
+  </div>
+</nav>
 
     
 
